@@ -1,0 +1,220 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0%;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    color: white;
+}
+nav{
+    position: fixed;
+    background-color: black;
+    display: flex;
+    justify-content:center;
+    flex-wrap: nowrap;
+    top: 0;
+    width: 100%;
+}
+ul {
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+}
+li a {
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+.principal{
+    padding-top: 20px;
+    margin-top: 10vh;
+}
+@media only screen and (min-width :750px) {
+    .principal {
+        padding-top: 20px;
+        margin-top: 5vh;
+    }
+}
+
+footer {
+    display: block;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    background-color:black;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+    position: fixed;
+}
+.footer-links a {
+    color: white;
+}
+.footer-section {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;   
+}
+.img-inicio {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 50vh; 
+
+}
+.video-inicio {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10vh;
+}
+.title-inicio{
+    text-align: center;
+}
+.parrafo-inicio{
+    line-height: 1.8;
+    display: inline-block;
+    font-size: large;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.contacto-titulo{
+    text-align: center;
+}
+
+.contacto__form {
+    border-radius: 5px;
+    background-color: black;
+    padding: 20px;
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-bottom: 16px; 
+    resize: vertical;
+    
+    
+
+}
+input[type=submit] {
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 8px;
+
+}
+input[type=submit]:hover {
+    background-color:yellow;
+}
+
+.title-catalogo {
+    text-align: center;
+}
+.preguntas__titulo {
+    text-align: center;
+}
+.preguntas__titulo--texto {
+    font-size:23px;
+    margin-top: 15vh;
+    margin-left: 20px;
+    width: 100%;
+}
+.informacion__title {
+    text-align: center;
+    margin-top: 5vh;
+}
+.informacion__title--texto {
+    margin-top:15vh;
+    font-size: 23px;
+    width:100%;
+    margin-left: 20px;
+}
+
+.catalogo {
+    display: grid;
+    grid-template-areas:
+        "foto1"
+        "foto2"
+        "foto3"
+        "foto4"
+        "foto5"
+        "foto6";
+    grid-template-columns: repeat(1,auto);
+    align-content:stretch;
+    gap: 10px;
+    padding: 0.5vw;
+    margin-top: 5vh;
+}
+@media only screen and (min-width: 800px) {
+    .catalogo {
+        display: grid;
+        grid-template-areas:
+            "foto1 foto1 foto2 foto2 foto 3 foto3"
+            "foto1 foto1 foto2 foto2 foto3 foto3"
+            "foto4 foto4 foto5 foto5 foto6 foto6";
+        
+        grid-template-columns: repeat(6,auto);
+        gap: 10px;
+        padding: 00.5vw;
+    }
+    }
+.title__catalogo {
+    text-align:center ;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    }
+
+
+/* ACA HACER GRID AREA PARA PREGUNTAS FREQ */
+
+
+/*PROBAR PARA REEMPLAZAR IMGS LINK https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }

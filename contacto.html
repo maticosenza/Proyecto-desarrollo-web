@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contacto</title>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catalogo</a></li>
+        <li><a href="informacion.html">Información</a></li>
+        <li><a href="Preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+</nav>
+    <div class="principal"></div>
+        <h1 class="contacto-titulo">Contacto</h1>
+
+<div class="contacto__form">
+    <form action="action_page.php">
+        <label for="fname">Nombre</label>
+            <input type="text" id="fname" name="firstname" placeholder="Tu nombre..">
+
+        <label for="lname">Apellido</label>
+            <input type="text" id="lname" name="lastname" placeholder="Tu apellido..">
+
+        <label for="pais">País</label>
+            <select id="pais" name="pais">
+                <option value="argentina">Argentina</option>
+                <option value="uruguay">Urugay</option>
+                <option value="chile">Chile</option>
+            </select>
+
+        <label for="subject">Comentarios</label>
+            <textarea id="subject" name="subject" placeholder="Escriba aqui.." style="height:200px"></textarea>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+</div>
+<footer>
+    <div class="footer-section">
+        <p class="footer-links">
+            <a href="index.html">Menu</a>
+            <a href="catalogo.html">Catalogo</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="informacion.html">Información</a>
+            <a href="Preguntasfrecuentes.html">Preguntas Frecuentes</a>
+        </p>    
+    </div>
+</footer>
+</body>
+</html>
