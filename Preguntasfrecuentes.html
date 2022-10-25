@@ -1,46 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Preguntas Frecuentes</title>
 </head>
 <body>
-    <h1>Informacion</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="catalogo.html">Catalogo</a></li>
-                <li><a href="informacion.html">Información</a></li>
-                <li><a href="Preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Tribeca Showroom</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="catalogo.html">Catálogo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Preguntasfrecuentes.html">Preguntas Frecuentes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
     <div class="principal">
         <h1 class="preguntas__titulo">Preguntas Frecuentes</h1>
-            <p class="preguntas__titulo--texto">Los cambios pueden realizarse en cualquier día y horario de atención al público y podrán efectuarse dentro de los quince (15) días  corridos posteriores a la operación.  Al momento de efectuarse el cambio de productos, en caso de existir un saldo a favor del consumidor, el establecimiento está obligado a entregar un comprobante que refleje dicho saldo.
-                Tener en cuenta que NO se realizan devoluciones. 
-                Las prendas en SALE con precios únicos no tiene cambio. 
-                Para realizar el cambio, deberás tener en cuenta lo siguiente:  
-                El producto NO PUEDE haber sido usado.
-                El producto DEBE ESTAR en perfectas condiciones.
-                El producto se puede cambiar UNA sola vez.
-                Los cambios se realizan por productos de la misma temporada.
-                Los costos de envío quedan a cargo del comprador.
-                Se puede realizar el cambio retirando gratis por el local.
-                El paquete se debe enviar a los datos que se indican en "REMITENTE" a través de Correo Argentino.
-                Al momento de efectuar la compra por el sitio web o por la tienda, usted acepta estas condiciones. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam nulla, natus expedita quam omnis, dolorum enim laudantium, earum molestiae recusandae velit ipsa nisi eligendi? Corrupti quaerat facilis labore ipsa Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, aut. Vitae dignissimos neque nulla recusandae, maxime eligendi ab tempora ducimus velit repellat voluptatum nobis pariatur quibusdam inventore reprehenderit quae <officiis class="lorem"></officiis>        </p>
+
+  <div class="d-flex justify-content-center">
+    <div class="list-group">
+
+      <a href="#" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">¿Hay devoluciones?</h5>
+        </div>
+        <p class="mb-1">Tener en cuenta que tenes 30 días para realizar devoluciones.</p>
+      </a>
+
+      <a href="#" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">¿Como realizar cambios?</h5>
+        </div>
+        <p class="mb-1">Los cambios pueden realizarse en cualquier día y horario de atención al público y podrán efectuarse dentro de los quince (15) días</p>
+      </a>
+
+      <a href="#" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">¿Realizan cambios en temprada SALE?</h5>
+        </div>
+        <p class="mb-1">Las prendas en SALE con precios únicos no tiene cambio.</p>
+      </a>
+
+      <a href="#" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">¿Cuantos cambios puedo realizar?</h5>
+        </div>
+        <p class="mb-1">Los cambios se realizan una sola vez.</p>
+      </a>
+
+      <a href="#" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">¿El envío tiene costo?</h5>
+        </div>
+        <p class="mb-1">El costo de envío va a cargo del comprador.</p>
+      </a>
+
+      <a href="#" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">¿Se puede retirar por el Showroom?</h5>
+        </div>
+        <p class="mb-1">Podes retirar tu pedido sin costo.</p>
+      </a>
+
+      <a href="#" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">¿Hay descuentos?</h5>
+        </div>
+        <p class="mb-1">Abonando en efectivo/Transferencia tenes 10% OFF.</p>
+      </a>
     </div>
+  </div>
 <footer>
         <div class="footer-section">
             <p class="footer-links">
-                <a href="index.html">Inicio</a>
-                <a href="catalogo.html">Catalogo</a>
-                <a href="contacto.html">Contacto</a>
-                <a href="informacion.html">Información</a>
-                <a href="Preguntasfrecuentes.html">Preguntas Frecuentes</a>
+              <a href="index.html">Home</a>
+              <a href="catalogo.html">Catalogo</a>
+              <a href="nosotros.html">Nosotros</a>
+              <a href="Preguntasfrecuentes.html">Preguntas Frecuentes</a>
+              <a href="contacto.html">Contacto</a>
             </p>    
         </div>
 </footer>  

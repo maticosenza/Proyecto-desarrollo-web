@@ -1,79 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Catalogo</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav>
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="catalogo.html">Catalogo</a></li>
-        <li><a href="informacion.html">Información</a></li>
-        <li><a href="Preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-</nav>
-<!-- <div class="principal">
-    <h1 class="title__catalogo">Catálogo</h1>
-            <div class="Catalogo"></div>
-            <div class="foto1"><img src="foto1.jpeg" alt="foto1grid"></div>
-            <div class="foto2"><img src="foto2.jpeg" alt="foto2grid"></div>
-            <div class="foto3"><img src="foto3.jpeg" alt="foto3grid"></div>
-            <div class="foto4"><img src="foto4.jpeg" alt="foto4grid"></div>
-            <div class="foto5"><img src="foto5.jpeg" alt="foto5grid"></div>
-            <div class="foto6"><img src="foto6.jpeg" alt="foto6grid"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Tribeca Showroom</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="catalogo.html">Catálogo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Preguntasfrecuentes.html">Preguntas Frecuentes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
         </div>
-</div> -->
-<div class="row">
-    <div class="column">
-        <img src="foto1.jpg">
-        <img src="foto2.jpg">
-        <img src="foto3.jpeg">
-        <img src="foto4.jpeg">
-        <img src="foto5.jpg">
-        <img src="foto6.jpg">
-        <img src="Tribeshow.png">
-    </div>
-    <div class="column">
-        <img src="foto1.jpg">
-        <img src="foto2.jpg">
-        <img src="foto3.jpeg">
-        <img src="foto4.jpeg">
-        <img src="foto5.jpg">
-        <img src="foto6.jpg">
-        
-    </div>
-    <div class="column">
-        <img src="foto1.jpg">
-        <img src="foto2.jpg">
-        <img src="foto3.jpeg">
-        <img src="foto4.jpeg">
-        <img src="foto5.jpg">
-        <img src="foto6.jpg">
+      </nav>
 
+  <div class="principal"></div>
+    <h1 class="title__catalogo">Catálogo</h1>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="card" style="width: 18rem;">
+        <img src="./assets/foto1.png" class="card-img-top" alt="foto1">
+        <div class="card-body">
+          <h5 class="card-title">Calza Biker</h5>
+        <p class="card-text">Tribeca Showroom</p>
+        <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+      </div>
     </div>
-    <div class="column">
-        <img src="foto1.jpg">
-        <img src="foto2.jpg">
-        <img src="foto3.jpeg">
-        <img src="foto4.jpeg">
-        <img src="foto5.jpg">
-        <img src="foto6.jpg">
-
+    <div class="card" style="width: 18rem;">
+      <img src="./assets/foto2.png" class="card-img-top" alt="foto2">
+      <div class="card-body">
+        <h5 class="card-title">Top Morley</h5>
+        <p class="card-text">Tribeca Showroom</p>
+        <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+      </div>
     </div>
+    <div class="card" style="width: 18rem;">
+      <img src="./assets/foto3.png" class="card-img-top" alt="foto3">
+      <div class="card-body">
+        <h5 class="card-title">Conjunto Biker</h5>
+        <p class="card-text">Tribeca Showroom</p>
+        <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="card" style="width: 18rem;">
+      <img src="./assets/foto4.png" class="card-img-top" alt="foto4">
+      <div class="card-body">
+        <h5 class="card-title">Remeron Script</h5>
+        <p class="card-text">Tribeca Showroom</p>
+        <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="./assets/foto5.png" class="card-img-top" alt="foto5">
+      <div class="card-body">
+        <h5 class="card-title">Jean Mom</h5>
+        <p class="card-text">Tribeca Showroom</p>
+        <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="./assets/foto6.png" class="card-img-top" alt="foto6">
+      <div class="card-body">
+        <h5 class="card-title">Remera Nyjah</h5>
+        <p class="card-text">Tribeca Showroom</p>
+        <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="card" style="width: 18rem;">
+      <img src="./assets/foto7.png" class="card-img-top" alt="foto7">
+      <div class="card-body">
+        <h5 class="card-title">Conjunto Jet</h5>
+        <p class="card-text">Tribeca Showroom</p>
+        <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="./assets/foto8.png" class="card-img-top" alt="foto8">
+      <div class="card-body">
+        <h5 class="card-title">Buzo Wirst</h5>
+        <p class="card-text">Tribeca Showroom</p>
+        <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="./assets/foto9.png" class="card-img-top" alt="foto9">
+      <div class="card-body">
+        <h5 class="card-title">Buzo Authentic</h5>
+        <p class="card-text">Tribeca Showroom</p>
+        <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+      </div>
+    </div>
+  </div>
 </div>
+
+
 <footer>
     <div class="footer-section">
         <p class="footer-links">
-            <a href="index.html">Menu</a>
-            <a href="catalogo.html">Catalogo</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="informacion.html">Información</a>
-            <a href="Preguntasfrecuentes.html">Preguntas Frecuentes</a>
+          <a href="index.html">Home</a>
+          <a href="catalogo.html">Catalogo</a>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="Preguntasfrecuentes.html">Preguntas Frecuentes</a>
+          <a href="contacto.html">Contacto</a>
         </p>    
     </div>
 </footer>

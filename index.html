@@ -1,47 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Inicio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="catalogo.html">Catalogo</a></li>
-            <li><a href="informacion.html">Información</a></li>
-            <li><a href="Preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+  </head>
+  <body>
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Tribeca Showroom</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="catalogo.html">Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Preguntasfrecuentes.html">Preguntas Frecuentes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
         </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
     </nav>
-    <div class="principal"></div>
-        <h1 class="title-inicio">Tribeca Showroom</h1>
-            <section class="img-inicio"><img src="Tribeshow.png" alt=""></section>
-                <p class="parrafo-inicio">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, modi quidem saepe, mollitia voluptatibus soluta aut quaerat totam, nulla necessitatibus voluptate fugiat adipisci quas commodi! Assumenda tenetur nostrum maxime alias!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor distinctio voluptas facere quasi, qui aperiam laborum iure atque enim quaerat explicabo asperiores. Consequuntur praesentium assumenda aperiam voluptate voluptatibus fuga adipisci!
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum nostrum iusto, rerum laudantium porro tempora facilis recusandae fugiat dolorem soluta ipsa veritatis sint quis sapiente? A laboriosam veritatis quod maxime!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia repudiandae magni officia, natus quam tempora totam est officiis cumque, nostrum, aspernatur ipsum sequi sed! Ad consequatur officia voluptates autem natus.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum maiores ipsum facilis sunt officia asperiores quam provident iste sint est, vitae tempora fugiat dolor, ex esse unde dicta! Vitae, minus!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nihil blanditiis aspernatur esse impedit, atque iste, cumque officia tempora fuga quos illum culpa repudiandae rerum eius dignissimos sint earum consectetur?
-                </p>
-    <div class="video-inicio">
-        <iframe width="420" height="315"
-        src="https://www.youtube.com/embed/W4LjGRKVNpE">
+  
+  <div class="principal"></div>
+    <h1 class="animate__animated animate__bounce">Tribeca Showroom</h1>
+    <div class="class="class="col-md-12 col-sm-12">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="assets/banner1.png" class="d-block w-100" alt="banner1">
+        </div>
+          </div>
+    </div>
+
+    <p class="parrafo-inicio">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, modi
+      quidem saepe, mollitia voluptatibus soluta aut quaerat totam, nulla
+      necessitatibus voluptate fugiat adipisci quas commodi! Assumenda tenetur
+      nostrum maxime alias!Lorem Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Dolor distinctio voluptas facere quasi, qui aperiam
+      laborum iure atque enim quaerat explicabo asperiores. Consequuntur
+      praesentium assumenda aperiam voluptate voluptatibus fuga adipisci! Lorem
+      ipsum, dolor sit amet consectetur adipisicing elit. Earum nostrum iusto,
+      rerum laudantium porro tempora facilis recusandae fugiat dolorem soluta
+      ipsa veritatis sint quis sapiente? A laboriosam veritatis quod maxime!
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
+      repudiandae magni officia, natus quam tempora totam est officiis cumque,
+      nostrum, aspernatur ipsum sequi sed! Ad consequatur officia voluptates
+      autem natus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+      maiores ipsum facilis sunt officia asperiores quam provident iste sint
+      est, vitae tempora fugiat dolor, ex esse unde dicta! Vitae, minus! Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Quisquam nihil
+      blanditiis aspernatur esse impedit, atque iste, cumque officia tempora
+      fuga quos illum culpa repudiandae rerum eius dignissimos sint earum
+      consectetur?
+    </p>
+  <div class="video-inicio">
+    <section>
+      <iframe width="420" height="315" src="https://www.youtube.com/embed/W4LjGRKVNpE">
         </iframe>
+    </section>
+      <section>
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/puRvyWIkGf4">
+        </iframe>
+      </section>
+      <section>
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/W4LjGRKVNpE">
+          </iframe>
+      </section>
     </div>
-<footer>
-    <div class="footer-section">
+
+    <footer>
+      <div class="footer-section">
         <p class="footer-links">
-            <a href="index.html">Menu</a>
-            <a href="catalogo.html">Catalogo</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="informacion.html">Información</a>
-            <a href="Preguntasfrecuentes.html">Preguntas Frecuentes</a>
-        </p>    
-    </div>
-</footer>
-</body>
-</html>
+          <a href="index.html">Home</a>
+          <a href="catalogo.html">Catalogo</a>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="Preguntasfrecuentes.html">Preguntas Frecuentes</a>
+          <a href="contacto.html">Contacto</a>
+        </p>
+      </div>
+    </footer>
