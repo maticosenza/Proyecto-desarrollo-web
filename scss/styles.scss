@@ -1,0 +1,181 @@
+@import 'variables';
+@import 'footer';
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+}
+
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0%;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: $color-primario;
+    color: $color-secundario;
+}
+
+ul {
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+} 
+li a {
+    color: $color-secundario;
+    padding: 14px 30px;
+    text-decoration: none;
+} 
+.principal{
+    padding-top: 20px;
+    margin-top: 10vh;
+}
+@media only screen and (min-width :750px) {
+    .principal {
+        padding-top: 20px;
+        margin-top: 5vh;
+    }
+}
+
+.subtitulo-inicio {
+    @include flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.video-inicio{
+    display: flex;     
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 6vh;
+}
+@media only screen and (min-width: 900px) {
+.video-inicio {
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 20vh;
+}
+}
+
+/* Titulo Home Animacion */
+.animate__animated.animate__bounce {
+    --animate-duration: 10s;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.contacto-titulo{
+    text-align: center;
+}
+
+.contacto__form {
+    border-radius: 5px;
+    background-color: $color-primario;
+    padding: 20px;
+    @include flex;
+    
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-bottom: 16px; 
+    resize: vertical; 
+
+}
+input[type=submit] {
+    background-color: $color-secundario;
+    color: $color-primario;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10vh;
+    margin-top: 8px;
+
+
+}
+input[type=submit]:hover {
+    background-color:yellow;
+}
+.contacto__form--centro {
+    @include flex;
+}
+
+/* Nosotros */
+
+.nosotros__title {
+    text-align: center;
+    margin-top: 5vh;
+}
+.nosotros__title--texto {
+    margin-top:10vh;
+    margin-bottom: 5vh;
+    font-size: 15px;
+    vertical-align: center;
+    text-align: center;
+}
+.nosotros__title--subtexto{
+    margin-top: 10px;
+    margin-bottom: 5vh;
+}
+
+.nosotros__banner{
+    width: 100%;
+    height: 30%;
+}
+
+/* Catalogo */
+
+.title__catalogo {
+    text-align: center;
+}
+.card-title{
+    color: $color-primario;
+}
+
+.card-text{
+    color: $color-primario;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+}
+
+.container-fluid{
+    margin-bottom: 20vh;
+}
+
+/* Preguntas Frecuentes */
+
+.preguntas__titulo {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+.preguntas__titulo--texto {
+    font-size:23px;
+    margin-top: 15vh;
+    margin-left: 20px;
+    width: 100%;
+}
+.list-group {
+    margin-bottom: 30vh;
+    width: 50%;
+}
+.list-group-item.active{
+    background-color:$color-secundario;
+    border-color: $color-secundario;
+    color: $color-primario;
+}
